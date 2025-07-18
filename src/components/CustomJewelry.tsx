@@ -56,7 +56,7 @@ export default function CustomJewelry() {
                 src="/ringsshowcase.png"
                 height={640}
                 width={510}
-                objectFit="cover"
+                className="object-cover"
                 alt="rings showcase"
                 style={{
                   height: 640,

@@ -40,8 +40,7 @@ export default async function Home() {
         <Image
           src={DiamondGroup}
           alt="diamond groups"
-          className="absolute left-0 bottom-0"
-          objectFit="cover"
+          className="absolute left-0 bottom-0 object-cover"
         />
         <MaxWidthWrapper cls="h-full">
           <div className="flex flex-col items-center justify-center h-full gap-10">
@@ -75,8 +74,7 @@ export default async function Home() {
             alt="circle background"
             width={800}
             height={800}
-            objectFit="contain"
-            className="absolute -right-[50px] top-[400px] -z-10"
+            className="absolute -right-[50px] top-[400px] -z-10 object-contain"
           />
         </div>
         <ExploreMore />

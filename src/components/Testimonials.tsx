@@ -28,8 +28,6 @@ interface TestimonialsProps {
 }
 
 export default function Testimonials({ data }: TestimonialsProps) {
-  console.log(data);
-
   return (
     <>
       <section className="mt-32">
@@ -46,9 +44,6 @@ export default function Testimonials({ data }: TestimonialsProps) {
 
                 clickable: true,
               }}
-              // pagination={{
-              //   clickable: true,
-              // }}
               slidesPerGroup={4}
               breakpoints={{
                 240: {
@@ -75,12 +70,10 @@ export default function Testimonials({ data }: TestimonialsProps) {
                 },
                 1280: {
                   slidesPerView: 4,
-                  // spaceBetween: 25,
                   slidesPerGroup: 4,
                   allowTouchMove: false,
                 },
               }}
-              // modules={[Pagination]}
               modules={[Pagination, Navigation]}
               speed={800}
               navigation={{
@@ -96,12 +89,12 @@ export default function Testimonials({ data }: TestimonialsProps) {
                       src={d.picture.medium || "/persondummy.jpg"}
                       width={120}
                       height={120}
+                      unoptimized
                       style={{
                         width: 120,
                         height: 120,
                       }}
                       alt="avatar"
-                      // className="rounded-full"
                     />
                     <span className="font-semibold text-sm block mt-3">
                       {d.name.first + d.name.last}
@@ -113,7 +106,6 @@ export default function Testimonials({ data }: TestimonialsProps) {
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Asperiores at veritatis
                     </p>
-                    {/* <p>{d.message}</p> */}
                   </div>
                 </SwiperSlide>
               ))}

@@ -73,7 +73,7 @@ export default function ExploreMore() {
                   width: 590,
                   height: 420,
                 }}
-                objectFit="cover"
+                className="object-cover"
               />
             </div>
           </div>

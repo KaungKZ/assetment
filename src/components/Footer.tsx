@@ -90,7 +90,6 @@ export default function Footer() {
               initialValues={{ email: "" }}
               validationSchema={SignupSchema}
               onSubmit={(values, { setSubmitting }) => {
-                console.log(values);
                 setSubmitting(true);
                 console.log(
                   `${values.email} has subscribed to newsletter. Sent an email to ${process.env.EMAIL_ADDRESS}`
