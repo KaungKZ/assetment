@@ -92,7 +92,7 @@ export default function Footer() {
               onSubmit={(values, { setSubmitting }) => {
                 setSubmitting(true);
                 console.log(
-                  `${values.email} has subscribed to newsletter. Sent an email to ${process.env.EMAIL_ADDRESS}`
+                  `${values.email} has subscribed to newsletter. Sent an email to (process.env.EMAIL_ADDRESS)`
                 );
                 setSubmitting(false);
               }}
